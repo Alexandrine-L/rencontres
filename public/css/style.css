@@ -1,0 +1,56 @@
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#title1 {
+    padding-top: 2%;
+    text-align: left;
+    color: #B0413E;
+    text-shadow: 4px 4px 6px antiquewhite;
+}
+
+footer{
+    margin-top: 1%;
+    text-align: center;
+}
+
+.navbar{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.hero {
+    background: antiquewhite url('../img/hero_rencontres.jpeg') center center no-repeat;
+    height: 533px;
+}
+
+.form-group{
+    margin-top: 10px;
+}
+
+.register{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.login{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.btn-sign{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-light:hover{
+    color: white;
+    background-color: dimgrey;
+}
+

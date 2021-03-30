@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register your profile{% endblock %}
+
+{% block body %}
+
+    <h1>Please enter your profile</h1>
+    <div class="register">
+        {{ form_start(userProfileForm) }}
+        {{ form_row(userProfileForm.birthDate) }}
+        {{ form_row(userProfileForm.sexe) }}
+        {{ form_row(userProfileForm.postCode) }}
+        {{ form_row(userProfileForm.city) }}
+        <div class="btn-sign">
+            <button type="submit" class="btn btn-light">Validate</button>
+        </div>
+        {{ form_end(userProfileForm) }}
+    </div>
+{% endblock %}

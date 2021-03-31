@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\UserProfileRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=UserProfileRepository::class)
@@ -18,7 +19,8 @@ class UserProfile
     private $id;
 
     /**
-     * @ORM\Column(type="datetime")
+     * @Assert\Type("\DateTimeInterface", message="The birthdate is not a valid birthdate")
+     * @ORM\Column(type="date")
      */
     private $birthDate;
 
